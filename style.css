@@ -28,36 +28,16 @@ body::-webkit-scrollbar {
   transition: background 0.3s ease;
 }
 .cart {
-  position: relative;
-  left: 30%;
-}
-@media screen and (width < 920px) {
-  .cart {
-    position: relative;
-    left: 20%;
-  }
+  margin-left: auto;
+  margin-right: 20px;
 }
 
-@media screen and (width < 813px) {
-  .cart {
-    position: relative;
-    left: 10%;
-  }
-}
-
-@media screen and (width < 725px) {
-  .cart {
-    position: relative;
-    left: 0px;
-  }
-}
-
-@media screen and (width < 665px) {
+@media screen and (width < 673px) {
   .navbar a {
     padding: 10px 15px;
   }
 }
-@media screen and (width < 555px) {
+@media screen and (width < 563px) {
   .navbar a {
     padding: 10px 8px;
   }
@@ -65,21 +45,22 @@ body::-webkit-scrollbar {
     padding-left: 30px;
   }
 }
-@media screen and (width < 429px) {
+@media screen and (width < 451px) {
   .navbar a {
-    padding: 0px 4px;
+    padding: 0px 6px;
+    font-size: 17px;
   }
   .navbar {
     padding-left: 18px;
   }
+}
+@media screen and (width<313px) {
   .navbar a {
+    padding: 0px 6px;
     font-size: 10px;
   }
 }
-@media screen and (width < 255px) {
-  .navbar a {
-    padding: 10px 8px;
-  }
+@media screen and (width < 225px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -87,6 +68,13 @@ body::-webkit-scrollbar {
   }
   .header {
     margin-top: 200px;
+  }
+  .cart {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cart img {
+    width: 20px;
   }
 }
 
@@ -140,11 +128,17 @@ body::-webkit-scrollbar {
   }
 }
 @media screen and (width < 241px) {
-  .header img {
-    width: 100px;
+  .header {
+    display: flex;
+    flex-direction: column;
   }
   .header h1 {
-    font-size: 10px;
+    font-size: 25px;
+  }
+}
+@media screen and (width<233px) {
+  .header img {
+    width: 100%;
   }
 }
 
@@ -225,4 +219,19 @@ button {
 }
 button:hover {
   background: grey;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+
+  bottom: 0px;
+}
+@media screen and (width<219px) {
+  footer {
+    display: none;
+  }
 }
